@@ -1,0 +1,10 @@
+{
+    "games": [
+        {
+            "name": "The Great Overkill Tournament",
+            "gamePath": "The Great Overkill Tournament.exe",
+            "thumbPath": "thumb.png",
+            "desc": "Top-down shooter"
+        }
+    ]
+}
