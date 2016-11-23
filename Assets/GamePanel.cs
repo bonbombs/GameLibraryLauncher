@@ -27,7 +27,7 @@ public class GamePanel : MonoBehaviour {
         Debug.Log(Application.streamingAssetsPath + "/" + metadata.gamePath);
         using (System.Diagnostics.Process execute = new System.Diagnostics.Process())
         {
-            execute.StartInfo.WindowStyle = System.Diagnostics.ProcessWindowStyle.Normal;
+            execute.StartInfo.WindowStyle = System.Diagnostics.ProcessWindowStyle.Maximized;
             execute.EnableRaisingEvents = true;
             execute.Exited += OnGameExit;
             execute.StartInfo.FileName = Application.streamingAssetsPath + "/" + metadata.name + "/" + metadata.gamePath;
@@ -57,7 +57,6 @@ public class GamePanel : MonoBehaviour {
         localFile = new WWW(finalPath);
 
         yield return localFile;
-
         texture = localFile.texture;
         sprite = Sprite.Create(texture as Texture2D, new Rect(0, 0, texture.width, texture.height), Vector2.zero);
         gameThumbnail.sprite = sprite;

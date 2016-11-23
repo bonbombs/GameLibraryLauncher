@@ -5,6 +5,12 @@
             "gamePath": "The Great Overkill Tournament.exe",
             "thumbPath": "thumb.png",
             "desc": "Top-down shooter"
+        },
+        {
+            "name": "Maximum Cabatcity",
+            "gamePath": "MaximumCabatcity.exe",
+            "thumbPath": "thumbnail.png",
+            "desc": "A clicker game"
         }
     ]
 }

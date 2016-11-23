@@ -26,3 +26,4 @@ sysinfo.txt
 
 # Custom files
 *.exe
+*_[Dd]ata/
